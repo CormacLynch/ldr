@@ -1,0 +1,19 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/inputtypes",
+    "test/queryselector",
+    "test/touchevents",
+    "test/css/animations",
+    "test/css/backgroundsize",
+    "test/css/borderradius",
+    "test/css/boxshadow",
+    "test/css/remunit",
+    "test/css/transitions",
+    "test/forms/validation",
+    "test/storage/sessionstorage"
+  ]
+}

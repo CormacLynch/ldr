@@ -1,0 +1,15 @@
+/*
+
+!/composer.json
+!/composer.lock
+!/beam.json
+!/.htaccess
+!/.gitignore
+!/mysite/
+!/themes/
+!/maintenance
+!/assets/
+/assets/*
+!/assets/.htaccess
+
+.DS_Store

@@ -1,0 +1,48 @@
+// ==========================================================================
+// Heyday Styles
+// ==========================================================================
+
+// STYLE
+// To make sure our team writes consistent, idiomatic CSS/Less please refer to
+// https://github.com/necolas/idiomatic-css for formatting and style details.
+// Some key points:
+// - Use real tabs (configure your editor to "show invisibles").
+// - All code should look like a single person typed it.
+//
+//
+// Modules
+// Key points of the CSS module system:
+// - All css should be defined in a css module.
+// - All css modules should use the BEM naming convention.
+// - All css modules should have a comment detailing their usage and provide
+//     an example of the basic HTML structure expected.
+
+// Environment setup
+// ==========================================================================
+@import "less-helpers/less/reset.less"; // Reset and basic print styles
+
+// Variable & mixins
+// ==========================================================================
+@import (less) "variables.less";
+@import (less) "less-helpers/less/mixins.less";
+@import (less) "less-helpers/less/easing.less";
+@import "less-helpers/less/grid.less";
+
+// Bootstrap
+// ==========================================================================
+@import "bootstrap/less/variables.less";
+@import "bootstrap/less/forms.less";
+
+// Core
+// ==========================================================================
+@import "core/layout.less"; // Grid and base layout styles (l)
+@import "core/fonts.less"; // Fonts
+@import "core/typography.less"; // Type styles (type)
+@import (optional) "generated/icons.less"; // Icons
+@import "core/helpers.less"; // Helper classes for adaptive grid
+@import "less-helpers/less/helpers.less"; // General helper styles (help)
+
+// Modules
+// ==========================================================================
+@import "modules/header.less"; // Header styles
+@import "modules/navigation.less"; // Navigation styles

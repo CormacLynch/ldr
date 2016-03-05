@@ -1,0 +1,36 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages:satis@packages.heyday.net.nz/"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/hamishLamb/style-guide.git"
+        }
+    ],
+
+    "require": {
+        "silverstripe/cms": "@stable",
+        "silverstripe/framework": "@stable",
+
+        "camspiers/autoloader-composer-silverstripe": "@stable",
+        "camspiers/honeypot" : "@stable",
+        "camspiers/silverstripe-loggerbridge": "@stable",
+
+        "heyday/silverstripe-cacheinclude": "@stable",
+        "heyday/silverstripe-hashpath": "@stable",
+        "heyday/silverstripe-optimisedimage": "@stable",
+        "heyday/silverstripe-menumanager": "@stable",
+        "heyday/silverstripe-templatehelpers": "@stable",
+
+        "kinglozzer/metatitle": "@stable",
+        "raven/raven": "@stable",
+        "silverstripe/googlesitemaps": "@stable"
+    },
+
+    "require-dev": {
+        "filp/whoops": "@stable",
+        "hamishLamb/style-guide": "dev-master#e14e37baa68dd46dfbd958fce9fbf1816b014e52"
+    }
+}

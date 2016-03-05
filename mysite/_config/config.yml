@@ -1,0 +1,21 @@
+---
+Name: mysite
+After: 'framework/*','cms/*'
+---
+
+SSViewer:
+  theme: 'base'
+
+GDBackend:
+  default_quality: 90
+
+ImagickBackend:
+  default_quality: 90
+
+Image:
+  extensions:
+    - ResampleImage
+
+ResampleImage:
+  max_x: 2000
+  max_y: 2000

@@ -1,0 +1,51 @@
+{
+	"import": [
+		"http://beam.heyday.net.nz/patterns/heyday-silverstripe.json"
+	],
+	"exclude": {
+		"patterns": [
+			
+		]
+	},
+	"servers": {
+		"s1": {
+			"user": "",
+			"host": "",
+			"webroot": ""
+		},
+		"live": {
+			"user": "",
+			"host": "",
+			"webroot": "",
+			"branch": "remotes/origin/master"
+		}
+	},
+	"commands": [
+		{
+			"command": "composer install -o --prefer-dist --no-dev",
+			"location": "local",
+			"phase": "pre",
+			"required": true
+		},
+		{
+			"command": "framework/sake dev/build",
+			"location": "target",
+			"phase": "post",
+			"tag": "build"
+		},
+		{
+			"command": "framework/sake cache-include/clearAll",
+			"location": "target",
+			"phase": "post",
+			"tag": "cache"
+		},
+		{
+			"command": "curl -s -f --data \"domain=domain.co.nz&name=$(whoami)\" https://api.heyday.net.nz/send/deployment/",
+			"location": "local",
+			"phase": "post",
+			"servers": [
+				"live"
+			]
+		}
+	]
+}
